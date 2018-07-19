@@ -67,8 +67,7 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
                 
 
     
-//                let jsonLon = jsonDict.["json"]["results"]["geometry"]["location"]["lng"]. //reee whats the santaxo
-//JSONDecoder().decode(RestaurantResults.self, from: data)
+
             }else{
                 
             }

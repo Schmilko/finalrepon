@@ -54,26 +54,13 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
     }
     
     func calculateDistance(place: String) {
-        var strGoogleApi = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(place)&key=AIzaSyBiw2dOmiz1teJDJ7xjxeSJykFuSzibu2g"
-        strGoogleApi = strGoogleApi.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        let urlRequest = URLRequest(url: URL(string: strGoogleApi)!)
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data,
-            response, error) in
-            if error == nil{
-                let jsonDict = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                print("json == \(String(describing: jsonDict))")
+  
+        
 //                let userLatitude = UserDefaults.standard.value(forKey: "lat") as! Double
 //                let userLongitude = UserDefaults.standard.value(forKey: "lon") as! Double
                 
 
     
-
-            }else{
-                
-            }
-       
-        
-        }
     }
     
 

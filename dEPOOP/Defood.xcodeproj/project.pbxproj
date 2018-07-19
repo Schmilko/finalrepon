@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		297ECF6A64AE416C7277F77E /* Pods_Defood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */; };
+		917E44B520FEECA6006B1D5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E44B420FEECA5006B1D5B /* Default-568h@2x.png */; };
+		917E44BA210020BA006B1D5B /* CoordinateController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E44B9210020BA006B1D5B /* CoordinateController1.swift */; };
+		917E44BC21002123006B1D5B /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E44BB21002123006B1D5B /* FoodViewController.swift */; };
+		91ADEAB620FD7786002CB7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADEAB520FD7786002CB7AA /* AppDelegate.swift */; };
+		91ADEAB820FD7786002CB7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADEAB720FD7786002CB7AA /* ViewController.swift */; };
+		91ADEABB20FD7786002CB7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ADEAB920FD7786002CB7AA /* Main.storyboard */; };
+		91ADEABD20FD7787002CB7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ADEABC20FD7787002CB7AA /* Assets.xcassets */; };
+		E0E1D0B5210115DE0092981A /* Restaurantresults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1D0B4210115DE0092981A /* Restaurantresults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Defood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA5CBEE0D635DDC9C2BE10C /* Pods-Defood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Defood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Defood/Pods-Defood.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF8D9E8433BB3FA1115EF62 /* Pods-Defood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Defood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Defood/Pods-Defood.release.xcconfig"; sourceTree = "<group>"; };
+		917E44B420FEECA5006B1D5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		917E44B9210020BA006B1D5B /* CoordinateController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateController1.swift; sourceTree = "<group>"; };
+		917E44BB21002123006B1D5B /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		91ADEAB220FD7786002CB7AA /* Defood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Defood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91ADEAB520FD7786002CB7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91ADEAB720FD7786002CB7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91ADEABA20FD7786002CB7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91ADEABC20FD7787002CB7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91ADEAC120FD7787002CB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E1D0B4210115DE0092981A /* Restaurantresults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurantresults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91ADEAAF20FD7786002CB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297ECF6A64AE416C7277F77E /* Pods_Defood.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CDD9B7BDAD5DC20B2ED783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AA5CBEE0D635DDC9C2BE10C /* Pods-Defood.debug.xcconfig */,
+				8DF8D9E8433BB3FA1115EF62 /* Pods-Defood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91ADEAA920FD7786002CB7AA = {
+			isa = PBXGroup;
+			children = (
+				917E44B420FEECA5006B1D5B /* Default-568h@2x.png */,
+				91ADEAB420FD7786002CB7AA /* Defood */,
+				91ADEAB320FD7786002CB7AA /* Products */,
+				79CDD9B7BDAD5DC20B2ED783 /* Pods */,
+				D99459444776227C613CFE7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91ADEAB320FD7786002CB7AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91ADEAB220FD7786002CB7AA /* Defood.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91ADEAB420FD7786002CB7AA /* Defood */ = {
+			isa = PBXGroup;
+			children = (
+				E0E1D0B3210115C60092981A /* Models */,
+				91ADEAB520FD7786002CB7AA /* AppDelegate.swift */,
+				91ADEABC20FD7787002CB7AA /* Assets.xcassets */,
+				91ADEAB920FD7786002CB7AA /* Main.storyboard */,
+				91ADEAC120FD7787002CB7AA /* Info.plist */,
+				91E7ED5E20FE9852009ACE01 /* Controllers */,
+			);
+			path = Defood;
+			sourceTree = "<group>";
+		};
+		91E7ED5E20FE9852009ACE01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91ADEAB720FD7786002CB7AA /* ViewController.swift */,
+				917E44B9210020BA006B1D5B /* CoordinateController1.swift */,
+				917E44BB21002123006B1D5B /* FoodViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D99459444776227C613CFE7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E1D0B3210115C60092981A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0E1D0B4210115DE0092981A /* Restaurantresults.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91ADEAB120FD7786002CB7AA /* Defood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ADEAC420FD7787002CB7AA /* Build configuration list for PBXNativeTarget "Defood" */;
+			buildPhases = (
+				53C10E504AE8293F6A800053 /* [CP] Check Pods Manifest.lock */,
+				91ADEAAE20FD7786002CB7AA /* Sources */,
+				91ADEAAF20FD7786002CB7AA /* Frameworks */,
+				91ADEAB020FD7786002CB7AA /* Resources */,
+				81903F0C6F169781F532A434 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Defood;
+			productName = Defood;
+			productReference = 91ADEAB220FD7786002CB7AA /* Defood.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91ADEAAA20FD7786002CB7AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GLWR;
+				TargetAttributes = {
+					91ADEAB120FD7786002CB7AA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 91ADEAAD20FD7786002CB7AA /* Build configuration list for PBXProject "Defood" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91ADEAA920FD7786002CB7AA;
+			productRefGroup = 91ADEAB320FD7786002CB7AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91ADEAB120FD7786002CB7AA /* Defood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91ADEAB020FD7786002CB7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917E44B520FEECA6006B1D5B /* Default-568h@2x.png in Resources */,
+				91ADEABD20FD7787002CB7AA /* Assets.xcassets in Resources */,
+				91ADEABB20FD7786002CB7AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53C10E504AE8293F6A800053 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Defood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81903F0C6F169781F532A434 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Defood/Pods-Defood-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Defood/Pods-Defood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91ADEAAE20FD7786002CB7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91ADEAB820FD7786002CB7AA /* ViewController.swift in Sources */,
+				917E44BC21002123006B1D5B /* FoodViewController.swift in Sources */,
+				91ADEAB620FD7786002CB7AA /* AppDelegate.swift in Sources */,
+				E0E1D0B5210115DE0092981A /* Restaurantresults.swift in Sources */,
+				917E44BA210020BA006B1D5B /* CoordinateController1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91ADEAB920FD7786002CB7AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91ADEABA20FD7786002CB7AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91ADEAC220FD7787002CB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91ADEAC320FD7787002CB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91ADEAC520FD7787002CB7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA5CBEE0D635DDC9C2BE10C /* Pods-Defood.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C378TMZW64;
+				INFOPLIST_FILE = Defood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLWR.Defood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91ADEAC620FD7787002CB7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF8D9E8433BB3FA1115EF62 /* Pods-Defood.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C378TMZW64;
+				INFOPLIST_FILE = Defood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLWR.Defood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91ADEAAD20FD7786002CB7AA /* Build configuration list for PBXProject "Defood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ADEAC220FD7787002CB7AA /* Debug */,
+				91ADEAC320FD7787002CB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ADEAC420FD7787002CB7AA /* Build configuration list for PBXNativeTarget "Defood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ADEAC520FD7787002CB7AA /* Debug */,
+				91ADEAC620FD7787002CB7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91ADEAAA20FD7786002CB7AA /* Project object */;
+}

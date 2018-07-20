@@ -8,16 +8,20 @@
 
 import Foundation
 
+struct RestaurantResults: Decodable {
+    let results: [Restaurant]
+}
 struct Restaurant: Decodable {
     let formatted_address: String
     let icon: String
     let name: String
     let rating: Double
     let geometry: GeoLocation
-    //let opening_hours: OpeningHours
     let types: [String]
-    
+    var haverDistance: Double! = nil
 }
+
+
 
 struct RestaurantLocation: Decodable {
     let lat: Double
@@ -27,10 +31,6 @@ struct RestaurantLocation: Decodable {
 
 struct OpeningHours: Decodable {
     let opening_hours: Bool
-}
-
-struct RestaurantResults: Decodable {
-    let results: [Restaurant]
 }
 
 struct GeoLocation: Decodable{

@@ -31,7 +31,6 @@ struct OpeningHours: Decodable {
 
 struct RestaurantResults: Decodable {
     let results: [Restaurant]
-    let next_page_token: String
 }
 
 struct GeoLocation: Decodable{

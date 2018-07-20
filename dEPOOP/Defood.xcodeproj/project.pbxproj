@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188855D82101B5DD00312969 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188855D72101B5DD00312969 /* TableViewController.swift */; };
 		297ECF6A64AE416C7277F77E /* Pods_Defood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */; };
 		917E44B520FEECA6006B1D5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E44B420FEECA5006B1D5B /* Default-568h@2x.png */; };
 		917E44BA210020BA006B1D5B /* CoordinateController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E44B9210020BA006B1D5B /* CoordinateController1.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Defood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		188855D72101B5DD00312969 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1AA5CBEE0D635DDC9C2BE10C /* Pods-Defood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Defood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Defood/Pods-Defood.debug.xcconfig"; sourceTree = "<group>"; };
 		8DF8D9E8433BB3FA1115EF62 /* Pods-Defood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Defood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Defood/Pods-Defood.release.xcconfig"; sourceTree = "<group>"; };
 		917E44B420FEECA5006B1D5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				91ADEAB720FD7786002CB7AA /* ViewController.swift */,
 				917E44B9210020BA006B1D5B /* CoordinateController1.swift */,
 				917E44BB21002123006B1D5B /* FoodViewController.swift */,
+				188855D72101B5DD00312969 /* TableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91ADEAB820FD7786002CB7AA /* ViewController.swift in Sources */,
+				188855D82101B5DD00312969 /* TableViewController.swift in Sources */,
 				917E44BC21002123006B1D5B /* FoodViewController.swift in Sources */,
 				91ADEAB620FD7786002CB7AA /* AppDelegate.swift in Sources */,
 				E0E1D0B5210115DE0092981A /* Restaurantresults.swift in Sources */,
@@ -368,13 +372,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C378TMZW64;
+				DEVELOPMENT_TEAM = 4235T5N2RP;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Defood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GLWR.Defood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLW.Defood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,13 +392,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C378TMZW64;
+				DEVELOPMENT_TEAM = 4235T5N2RP;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Defood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GLWR.Defood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GLW.Defood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,7 +12,10 @@ import MapKit
 import CoreLocation
 
 class CoordinateController1: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+    }
     var location: CLLocation?
     
     @IBOutlet weak var userAddress: UITextField!
@@ -42,7 +45,7 @@ class CoordinateController1: UIViewController {
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
         
-        guard let address = userAddress.text else {return}
+        guard let address = userAddress.text else {   return}
         
         convertUserAddressToCoordinates(userAddress: address) { (lon, lat) in
             
@@ -51,7 +54,7 @@ class CoordinateController1: UIViewController {
             self.convertUserAddressToCoordinates(userAddress: fAddress, completionHandler: { (flon,flat) in
                 
                 DispatchQueue.main.async {
-
+                    
                     self.midpoint = (((flon + lon)/2), ((lat + flat)/2))
                     print(self.midpoint!)
                     print("is the midpoint")
@@ -121,6 +124,7 @@ class CoordinateController1: UIViewController {
             destination.location = location
         }
     }
+    
     //
     // idk if we need to put the outlets in this file because I cant access it so I can split this into two functions to make one for friend and user
     //   guard let userAddress.text = userAddress {

@@ -10,6 +10,12 @@ import UIKit
 import GoogleMaps
 
 extension UIViewController {
+    
+    @objc func textFieldShouldReturn(_ userAddress: UITextField, friendAddress: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false

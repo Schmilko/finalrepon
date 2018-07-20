@@ -11,10 +11,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class CoordinateController1: UIViewController {
+class CoordinateController1: UIViewController, UITextFieldDelegate {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        userAddress.delegate = self
+        friendAddress.delegate = self
     }
     var location: CLLocation?
     

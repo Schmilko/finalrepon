@@ -24,6 +24,7 @@ import Swift
 //}
 
 class FoodViewController: UIViewController, UITextFieldDelegate {
+    
     var location: CLLocation?
     @IBOutlet weak var pickingFoodTextField: UITextField!
     
@@ -40,7 +41,9 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
         
         searchPlaceFromGoogle(place: searchTerm) { (restaurants) in
             
-            //update restaurats array with the new restautants
+            //update restaurant array with the new restaurants
+      
+            
             
             //reload the table view
             
@@ -53,41 +56,6 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
-    
-    //    func haversineDistance(userLatitude: Double, userLongitude: Double, restaurantLatitude: Double, restaurantLongitude: Double, radius: Double = 6367444.7) -> Double {
-    //
-    //        let haversin = { (angle: Double) -> Double in
-    //            return (1 - cos(angle))/2
-    //        }
-    //
-    //        let ahaversin = { (angle: Double) -> Double in
-    //            return 2*asin(sqrt(angle))
-    //        }
-    //
-    //        // Converts from degrees to radians
-    //        let dToR = { (angle: Double) -> Double in
-    //            return (angle / 360) * 2 * Double.pi
-    //        }
-    //
-    //        let userLatitude = dToR(userLatitude)
-    //        let userLongitude = dToR(userLongitude)
-    //        let restaurantLatitude = dToR(restaurantLatitude)
-    //        let restaurantLongitude = dToR(restaurantLongitude)
-    //
-    //        print("haver Test")
-    //        let haverDistance = radius * ahaversin(haversin(restaurantLatitude - userLatitude) + cos(userLatitude) * cos(restaurantLatitude) * haversin(restaurantLongitude - userLongitude))
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //        return haverDistance
-    //
-    //    }
-    
     
     func searchPlaceFromGoogle(place: String, completion: @escaping ([Restaurant]) -> () ) {
         
@@ -137,106 +105,13 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
             
             //call the completion with the array of restaurants
             completion(restaurantsWeWant)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-//
-//            //
-//
-//
-//            //
-//
-//            //
-//
-//            print("THESE ARE RESTYURNATS")
-//            print(restaurants)
-//
-//
-//
-//            var restaurantsThatWeWant: [Restaurant] = []
-//            for index in [0, 2, 3, 4, 5, 6, ]{
-//                let restaurant = restaurants.results[index]
-//
-//
-//                let restaurantLongitude = restaurants.results[index].geometry.location.lng
-//                let restaurantLatitude = restaurants.results[index].geometry.location.lat
-//
-//
-//                guard let userLatitude = UserDefaults.standard.value(forKey: "lat") as! Double? else{return}
-//                let userLongitude = UserDefaults.standard.value(forKey: "lon") as! Double
-//
-//                let desiredRestaurantType = restaurants.results[index].types
-//
-//                let haverDistance = self.haversineDistance(userLatitude: userLatitude, userLongitude: userLongitude, restaurantLatitude: restaurantLatitude, restaurantLongitude: restaurantLongitude)
-//
-//                if desiredRestaurantType.contains("restaurant") {
-//                    let restaurantName = restaurants.results[index].name
-//                    restaurantsThatWeWant.append([restaurantName, haverDistance])
-//                }
-//                else if desiredRestaurantType.contains("food"){
-//                    let restaurantName = restaurants.results[index].name
-//                    restaurantsThatWeWant.append([restaurantName, haverDistance])
-//                }
-//                else if desiredRestaurantType.contains("bakery"){
-//                    let restaurantName = restaurants.results[index].name
-//                    restaurantsThatWeWant.append([restaurantName, haverDistance])
-//                }
-//                else if desiredRestaurantType.contains("cafe") {
-//                    let restaurantName = restaurants.results[index].name
-//                    restaurantsThatWeWant.append([restaurantName, haverDistance])
-//                }
-//                else{
-//                    print("None found")
-//                }
-//
-//                print(restaurantsThatWeWant)
-//
-//                completion(restaurantsThatWeWant)
-//            }
-            //                haversineDistance(userLatitude: Double, userLongitude: Double, restaurantLatitude: Double, restaurantLongitude: Double)
+            print(restaurantsWeWant)
+
         }
         task.resume()
     }
     
-    
-    //            var haverDistances = [Double]()
-    //
-    //            for haverIndex in 0...haverDistances.count - 1 {
-    //                haverDistances.append(haverDistance)
+
     
     
     func haversineDistance(userLatitude: Double, userLongitude: Double, restaurantLatitude: Double, restaurantLongitude: Double) -> Double {

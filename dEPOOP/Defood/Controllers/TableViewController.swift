@@ -11,6 +11,6 @@ import UIKit
 import CoreLocation
 import Swift
 
-class TableViewController: UIViewController, UITextFieldDelegate {
+class TableViewController: UITableViewController {
     
 }

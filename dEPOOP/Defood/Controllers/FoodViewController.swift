@@ -49,19 +49,65 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
             
             let restaurants = try! JSONDecoder().decode(RestaurantResults.self, from: data)
             completion(restaurants)
+            
+            for index in 0...restaurants.results.count - 1 {
+//                var index = 0
+//                index += 1
+                let restaurantLongitude = restaurants.results[index].geometry.location.lng
+                let restaurantLatitude = restaurants.results[index].geometry.location.lat
+                
+                let userLatitude = UserDefaults.standard.value(forKey: "lat") as! Double
+                let userLongitude = UserDefaults.standard.value(forKey: "lon") as! Double
+                
+                // Dumbass distance formula doesn't work for two points on earth
+//                let distanceFormulaLatitude = (userLatitude - restaurantLatitude)*(userLatitude - restaurantLatitude)
+//                let distanceFormulaLongitude =  (userLongitude - restaurantLongitude)*(userLongitude - restaurantLongitude)
+//                let distance = sqrt(distanceFormulaLatitude + distanceFormulaLongitude)
+//                print(distance)
+                
+                func haversineDinstance(userLatitude: Double, userLongitude: Double, restaurantLatitude: Double, restaurantLongitude: Double, radius: Double = 6367444.7) -> Double {
+                    
+                    let haversin = { (angle: Double) -> Double in
+                        return (1 - cos(angle))/2
+                    }
+                    
+                    let ahaversin = { (angle: Double) -> Double in
+                        return 2*asin(sqrt(angle))
+                    }
+                    
+                    // Converts from degrees to radians
+                    let dToR = { (angle: Double) -> Double in
+                        return (angle / 360) * 2 * Double.pi
+                    }
+                    
+                    let userLatitude = dToR(userLatitude)
+                    let userLongitude = dToR(userLongitude)
+                    let restaurantLatitude = dToR(restaurantLatitude)
+                    let restaurantLongitude = dToR(restaurantLongitude)
+                    
+                    return radius * ahaversin(haversin(restaurantLatitude - userLatitude) + cos(userLatitude) * cos(restaurantLatitude) * haversin(restaurantLongitude - userLongitude))
+                }
+            
+            }
+            
+   
+            
+
+            
+
+
         }
         task.resume()
     }
     
-    func calculateDistance(place: String) {
-  
+    
         
-//                let userLatitude = UserDefaults.standard.value(forKey: "lat") as! Double
-//                let userLongitude = UserDefaults.standard.value(forKey: "lon") as! Double
-                
+        
+        
+    
 
     
     }
     
 
-}
+

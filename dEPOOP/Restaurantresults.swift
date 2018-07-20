@@ -16,7 +16,7 @@ struct Restaurant: Decodable {
     let geometry: GeoLocation
     //let opening_hours: OpeningHours
     let types: [String]
-    
+  
 }
 
 struct RestaurantLocation: Decodable {
@@ -24,6 +24,7 @@ struct RestaurantLocation: Decodable {
     let lng: Double
     
 }
+
 
 struct OpeningHours: Decodable {
     let opening_hours: Bool

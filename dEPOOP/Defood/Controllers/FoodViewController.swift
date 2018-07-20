@@ -150,6 +150,7 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
                 }
 
             print(restaurantsThatWeWant)
+                    print(haverDistance)
                 return haverDistance
             }
 //                haversineDistance(userLatitude: Double, userLongitude: Double, restaurantLatitude: Double, restaurantLongitude: Double)
@@ -164,8 +165,9 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
 //            for haverIndex in 0...haverDistances.count - 1 {
 //                haverDistances.append(haverDistance)
 //            }
-        }
         task.resume()
+
+        }
     }
     
     
@@ -173,4 +175,4 @@ class FoodViewController: UIViewController, UITextFieldDelegate {
     
     
     
-}
+
